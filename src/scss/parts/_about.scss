@@ -1,0 +1,94 @@
+.subtitle {
+    display: block;
+    font-family: $font-Open-sans;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.some-benefit {
+
+    &__box {
+        padding-bottom: 55px;
+    }
+
+    &__title{
+        display: flex;
+        padding-bottom: 10px;
+        align-items: center;
+
+        span {
+            position: relative;
+            margin-right: 20px;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 42px;
+                height: 42px;
+                position: absolute;
+                bottom: -25%;
+                left: -25%;
+                background-color: $color-green;
+            }
+        }
+
+    }
+}
+
+.team-foto {
+    padding-bottom: 30px;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    padding: 65px 0;
+    background-color: $color-notwhite;
+
+    &__discription {
+        font-family: $font-Open-sans;
+        font-size: 18px;
+    }
+
+    &__btn {
+        background-color: $color-green;
+        color: $color-white;
+    }
+}
+
+.clients {
+    
+    &__box {
+        text-align: center;
+    }
+
+    &__title {
+        padding-bottom: 30px;
+        border-radius: 50%;
+    }
+}
+
+.logo-box {
+    padding-bottom: 30px;
+}
+
+.small-btn {
+    margin-bottom: 10px;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-white;
+    background: $color-green;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-black;
+    }
+}

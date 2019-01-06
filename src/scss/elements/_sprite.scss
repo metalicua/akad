@@ -1,0 +1,43 @@
+// SVG sprite
+
+.icon { 
+    width: 16px; 
+    height: 16px;
+    fill: $color-grey;
+
+    &:hover {
+      fill: $color-green;
+      text-decoration: none;
+    }
+  }
+
+.services-sprite {
+  width: 48px;
+  height: 48px;
+}
+
+.benefit-sprite {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  z-index: 10;
+}
+
+.blog-sprite {
+  width: 15px;
+  height: 15px;
+}
+
+#_ionicons_svg_ios-heart {
+  fill: $color-red;
+}
+
+#_ionicons_svg_ios-chatboxes {
+  fill: $color-grey;
+}
+
+.home_page-sprite {
+  width: 32px;
+  height: 32px;
+  fill: $color-grey;
+}

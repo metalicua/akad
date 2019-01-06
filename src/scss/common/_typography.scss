@@ -1,0 +1,70 @@
+// typography
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: $font-montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-grey;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.5;
+
+    span {
+        position: relative;
+        z-index: 10;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 67px;
+        height: 21px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $color-green;
+    }
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 2;
+    color: $color-grey;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    
+    &:hover {
+        text-decoration: none;
+    }
+}

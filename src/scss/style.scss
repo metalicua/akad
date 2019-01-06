@@ -1,0 +1,31 @@
+// Extended Files
+
+// Common
+@import 'common/variables';
+@import 'common/typography';
+@import 'common/main';
+
+
+// Custom
+@import 'custom/breadcrumb';
+@import 'custom/navbar';
+@import 'custom/btn';
+@import 'custom/form';
+
+//Elements 
+
+@import 'elements/sprite';
+@import 'elements/social';
+
+// Parts
+@import 'parts/banner';
+@import 'parts/header';
+@import 'parts/hero';
+@import 'parts/why_choose_us';
+@import 'parts/portfolio';
+@import 'parts/about';
+@import 'parts/contact';
+@import 'parts/services';
+@import 'parts/blog';
+@import 'parts/subscribe';
+@import 'parts/footer';

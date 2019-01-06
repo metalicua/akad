@@ -1,0 +1,45 @@
+.portfolio {
+
+    &__title {
+
+        h2 {
+
+            &:before {
+                content: '';
+                display: none;
+            }
+
+        }
+
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        padding-bottom: 20px;
+    }
+
+    &__link {
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-grey;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-green;
+        }
+    }
+
+    &__link--active {
+        color: $color-white;
+        background-color: $color-green;
+    }
+
+    &__box {
+        padding-bottom: 30px;
+    }
+}

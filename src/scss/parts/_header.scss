@@ -1,0 +1,12 @@
+// Header
+
+.header {
+    
+    &__logo {
+        font-family: $font-montserrat;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $color-grey;
+    }
+}

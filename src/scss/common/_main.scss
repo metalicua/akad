@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-montserrat;
+}
+
+.section {
+    padding: 75px 0;
+
+    &__header {
+        max-width: 700px;
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,49 @@
+.subscribe {
+    padding: 50px 0;
+    background-color: $color-green;
+
+    &__title {
+        padding-bottom: 30px;
+        font-family: $font-montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+
+    &__btn {
+        color: $color-green;
+        background-color: $color-white;
+    }
+}
+
+.subscribe-box {
+    padding: 25px;
+    background-color: $color-white;
+
+    &__title {
+        padding-bottom: 10px;
+        font-family: $font-montserrat;
+        font-size: 24px;
+        color: $color-grey;
+        font-weight: 700;
+    }
+
+    &__discription {
+        padding-bottom: 30px;
+        font-family: $font-Open-sans;
+        color: $color-lightgrey;
+        font-size: 16px;
+    }
+
+    &__input[placeholder] {
+        padding: 24px 25px;
+        background-color: $color-white;
+    }
+
+    &__btn {
+        padding: 13px 45px;
+        color: $color-white;
+        background-color: $color-green;
+    }
+}

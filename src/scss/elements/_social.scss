@@ -1,0 +1,23 @@
+// Social box
+
+.social {
+
+    &__list{
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline;
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: $color-green;
+        text-decoration: none;
+    }
+}

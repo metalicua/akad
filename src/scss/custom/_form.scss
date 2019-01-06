@@ -1,0 +1,14 @@
+// Form
+
+.form-control[placeholder] {
+    padding: 20px;
+    font-family: $font-montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-basicgrey;
+    border-radius: 0;
+    resize: none;
+    background-color: $color-notwhite;
+}
+

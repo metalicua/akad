@@ -1,0 +1,10 @@
+// banner
+
+.banner {
+    background: url('#{$path-img}header_bg.png') no-repeat center / cover;
+
+    &__content {
+        padding: 150px 0;  
+        text-align: center;  
+    }
+}
