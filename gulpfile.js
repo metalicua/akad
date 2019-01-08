@@ -42,6 +42,14 @@ gulp.task('css', function(){
         .pipe(browserSync.stream());
 });
 
+// JS
+
+gulp.task('js', function(){
+    return gulp.src('src/js/*.js')
+        .pipe(gulp.dest('build/js'))
+        .pipe(browserSync.stream());
+});
+
 // image
 gulp.task('img', function(){
     return gulp.src('src/img/*')
@@ -66,4 +74,4 @@ gulp.task('watch', function () {
 });
 
 // default
-gulp.task('default', [ 'html', 'css', 'sprite', 'img', 'browser-sync', 'watch' ]);
+gulp.task('default', [ 'html', 'css', 'js', 'sprite', 'img', 'browser-sync', 'watch' ]);

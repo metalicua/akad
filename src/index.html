@@ -17,6 +17,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/portfolio.js"></script>
 </head>
 <body>
     <svg width="0" height="0" class="hidden">
@@ -253,46 +255,46 @@
           <div class="portfolio__title">
             <h2>choose category</h2>
           </div>
-          <ul class="portfolio__list">
-            <li class="portfolio__item"><a href="#" class="portfolio__link portfolio__link--active">all</a></li>
-            <li class="portfolio__item"><a href="#" class="portfolio__link">webdesign</a></li>
-            <li class="portfolio__item"><a href="#" class="portfolio__link">graphic design</a></li>
-            <li class="portfolio__item"><a href="#" class="portfolio__link">fashion</a></li>
-            <li class="portfolio__item"><a href="#" class="portfolio__link">logo design</a></li>
-            <li class="portfolio__item"><a href="#" class="portfolio__link">advertising</a></li>
+          <ul class="portfolio__list js-portfolio-btns">
+            <li class="portfolio__item"><button class="portfolio__link portfolio__link--active" data-filter="*">all</button></li>
+            <li class="portfolio__item"><button class="portfolio__link" data-filter=".webdesign">webdesign</button></li>
+            <li class="portfolio__item"><button class="portfolio__link" data-filter=".graphic">graphic design</button></li>
+            <li class="portfolio__item"><button class="portfolio__link" data-filter=".fashion">fashion</button></li>
+            <li class="portfolio__item"><button class="portfolio__link" data-filter=".logo-desing">logo design</button></li>
+            <li class="portfolio__item"><button class="portfolio__link" data-filter=".advertising">advertising</button></li>
           </ul>
         </div>
 
-        <div class="col-md-3 col-sm-6">
-          <div class="portfolio__box">
+        <div class="col-md-3 col-sm-6 js-portfolio">
+          <div class="portfolio__box webdesign logo-desing">
             <img src="/img/isotop1.jpg" alt="">
           </div>
-          <div class="portfolio__box">
+          <div class="portfolio__box graphic advertising">
             <img src="/img/isotop4.jpg" alt="">
           </div>
-          <div class="portfolio__box">
+          <div class="portfolio__box fashion advertising">
             <img src="/img/isotop7.jpg" alt="">
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="portfolio__box">
+        <div class="col-md-3 col-sm-6 js-portfolio">
+            <div class="portfolio__box fashion logo-desing">
               <img src="/img/isotop2.jpg" alt="">
             </div>
-            <div class="portfolio__box">
+            <div class="portfolio__box webdesign logo-desing">
               <img src="/img/isotop5.jpg" alt="">
             </div>
-            <div class="portfolio__box">
+            <div class="portfolio__box fashion">
               <img src="/img/isotop8.jpg" alt="">
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-              <div class="portfolio__box">
+          <div class="col-md-3 col-sm-6 js-portfolio">
+              <div class="portfolio__box webdesign graphic">
                 <img src="/img/isotop3.jpg" alt="">
               </div>
-              <div class="portfolio__box">
+              <div class="portfolio__box fashion advertising">
                 <img src="/img/isotop6.jpg" alt="">
               </div>
-              <div class="portfolio__box">
+              <div class="portfolio__box graphic logo-desing advertising">
                 <img src="/img/isotop9.jpg" alt="">
               </div>
             </div>
