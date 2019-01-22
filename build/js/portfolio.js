@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    var portfolioGrid = $('.js-portfolio');
+    var portfolioGrid = $('#js-portfolio');
+    console.log(1);
 
     portfolioGrid.isotope({
         itemSelector: '.portfolio__box'
@@ -7,17 +8,8 @@ $(document).ready(function() {
 
     $('.js-portfolio-btns').on( 'click', 'button', function() {
         var filterValue = $(this).data('filter');
-            
-        $('.portfolio__link')
-            .removeClass('portfolio__link--active');
-
-        $(this)
-            .addClass('portfolio__link--active')
-            .siblings()
-            .removeClass('portfolio__link--active');
        
+     
         portfolioGrid.isotope({ filter: filterValue });
       });
-
-    
 });

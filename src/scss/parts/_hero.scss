@@ -11,6 +11,7 @@
     }
 
     &__box {
+        padding: 160px 0 125px;
         text-align: center;
     }
 
@@ -18,10 +19,13 @@
         padding-bottom: 30px;
         display: flex;
         justify-content: center;
-        font-size: 48px;
-        font-weight: 700;
-        color: $color-grey;
-        text-transform: uppercase;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $color-grey;
+        }
     }
 
     &__border {
@@ -29,7 +33,6 @@
     }
 
     &__discription {
-        padding-bottom: 125px;
         display: flex;
         justify-content: center;
         font-family: $font-Open-sans;
