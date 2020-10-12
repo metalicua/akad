@@ -9,6 +9,8 @@ var cssmin = require('gulp-cssmin');
 var rename = require("gulp-rename");
 var imagemin = require('gulp-imagemin');
 var spritesmith = require('gulp.spritesmith');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 // live reload
 gulp.task('browser-sync', function() {
@@ -45,7 +47,10 @@ gulp.task('css', function(){
 // JS
 
 gulp.task('js', function(){
-    return gulp.src('src/js/*.js')
+    return gulp.src(['src/js/*.js', '!src/js/*jquery*', '!src/js/*bootstrap*'])
+        .pipe(concat('script.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'))
         .pipe(browserSync.stream());
 });
@@ -74,4 +79,4 @@ gulp.task('watch', function () {
 });
 
 // default
-gulp.task('default', [ 'html', 'css', 'js', 'sprite', 'img', 'browser-sync', 'watch' ]);
+// gulp.task('default', [ 'html', 'css', 'js', 'sprite', 'img', 'browser-sync', 'watch' ]);

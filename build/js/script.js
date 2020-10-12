@@ -1,4 +1,4 @@
-$(document).ready(function() {
+﻿$(document).ready(function() {
    
     $('.js-portfolio-btns').on( 'click', 'button', function() {
         var filterValue = $(this).data('filter');
